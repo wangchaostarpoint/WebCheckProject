@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title></title>
+    <link rel="stylesheet" media="screen" href="Src/handsontable/handsontable.full.css" />
+     <script src="Src/handsontable/handsontable.full.js" type="text/jscript"></script>
+</head>
+
+<body>
+  <div id="myTable"></div>
+  <script type="text/javascript">
+    var data = [
+        ["", "Tesla", "Toyota", "Ford"],
+        ["2014", 10, 11, 12],
+        ["2015", 20, 15, 13],
+        ["2016", 30, 10, 14]
+    ];
+    var container = document.getElementById('myTable');
+    var hot = new Handsontable(container, {
+        data: data,
+        colHeaders: true,
+        rowHeaders: true,
+        stretchH: 'all'
+    });
+</script>
+</body>
+</html>

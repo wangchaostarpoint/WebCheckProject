@@ -1,0 +1,51 @@
+using System;
+using System.Data;
+using System.Data.SqlClient;
+using System.Web.UI;
+ 
+public partial class ChangePassword : Page
+{
+    protected void ChangePasswordButton_Click(object sender, EventArgs e)
+    {
+        string connectionString = "Your Connection String Here";
+        string userName = "YourUsername"; // 替换为实际的用户名
+        string oldPassword = OldPasswordTextBox.Text;
+        string newPassword = NewPasswordTextBox.Text;
+ 
+        using (SqlConnection conn = new SqlConnection(connectionString))
+        {
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("sp_verify_password", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@user", userName);
+            cmd.Parameters.AddWithValue("@password", oldPassword);
+            bool isValid = (bool)cmd.ExecuteScalar();
+ 
+            if (isValid)
+            {
+                // 旧密码正确，可以更新为新密码
+                cmd.CommandText = "UPDATE Users SET Password = @newPassword WHERE UserName = @userName";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@newPassword", newPassword);
+                cmd.Parameters.AddWithValue("@userName", userName);
+                int result = cmd.ExecuteNonQuery();
+ 
+                if (result > 0)
+                {
+                    // 密码更新成功
+                    Response.Write("密码更新成功！");
+                }
+                else
+                {
+                    // 密码更新失败
+                    Response.Write("密码更新失败，请重试。");
+                }
+            }
+            else
+            {
+                // 旧密码错误
+                Response.Write("原密码错误，请重新输入。");
+            }
+        }
+    }
+}

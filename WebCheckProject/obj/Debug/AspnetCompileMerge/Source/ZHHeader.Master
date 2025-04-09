@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ZHHeader.Master.cs" Inherits="WebCheckProject.CLHeader" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/委托单首页/styles.css" type="text/css" rel="stylesheet"/>
+    <link rel="stylesheet" href="files/样式框架/bootstrap-4.6.2-dist/css/bootstrap.css"/>
+    <!--<script src="resources/scripts/jquery-3.2.1.min.js"></script>-->
+    <style type="text/css">
+        .hide {
+            display: none;
+        }
+        .auto-style1 {
+            left: 0px;
+            top: 0px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            <div id="base" class="">
+
+
+     
+            <asp:Panel ID="Panel1" runat="server" Height="74px" 
+            style="margin-left: 193px; margin-top: 123px">
+                <br />
+                &nbsp;
+                <br />
+                &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </asp:Panel>
+            <asp:Panel ID="Panel2" runat="server" Height="417px" style="margin-left: 189px">
+            </asp:Panel>
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,233 @@
+body {
+    margin: 0;
+    text-align: center;
+    background-color: #F0F0F0;
+    background-image: url(./background.png);
+}
+
+#tb {
+    margin-left: 200px;
+    height: 50px;
+    width: 90%;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.15);
+}
+
+.tbcd img {
+    position: relative;
+    height: 45px;
+    float: left;
+    padding-left: 20px;
+    padding-top: 3px;
+
+}
+
+#mymenu {
+    display: inline-block;
+    text-align: center;
+    width: 230px;
+    height: 910px;
+    position: relative;
+    float: left;
+    background-color: rgb(47, 51, 56);
+}
+
+#mymenu div {
+    overflow: hidden;
+}
+
+.menuspan {
+    display: block;
+    overflow: hidden;
+    text-align: left;
+    color: #ffffff;
+    height: 80px;
+    line-height: 60px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+
+
+.menuspan:hover {
+    background-color: #6e76de;
+    text-decoration: none;
+}
+
+.menuspan img {
+    height: 20px;
+    position: relative;
+    float: left;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+#mymenu a {
+    display: block;
+    padding-left: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 0.85em;
+    height: 40px;
+    padding-top: 10px;
+}
+
+#mymenu a:hover {
+    color: grey;
+    text-decoration: none;
+}
+
+#mymenu div.collapsed {
+    height: 80px;
+
+}
+
+#mymenu div.collapsed img {
+    height: 20px;
+    position: relative;
+    float: left;
+    padding-left: 30px;
+    padding-top: 20px;
+
+}
+
+#mymenu div.logomenu {
+    height: 100px;
+
+}
+
+#mymenu div.logomenu img {
+    position: relative;
+    height: 60px;
+    width: 62px;
+    margin-left: 10px;
+    margin-top: 43px;
+    float: left;
+
+}
+
+#mymenu div.logomenu p {
+    width: 150px;
+    margin-left: 70px;
+    margin-top: 60px;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    letter-spacing: 2px;
+    font-size: 1em;
+
+}
+
+#mymenu div.meuneline {
+    width: 100%;
+    height: 60px;
+}
+
+#mymenu div.meuneline img {
+    margin-top: 20px;
+    width: 100%;
+    height: 30px;
+}
+
+
+
+#content1 {
+    margin: 30px 20px 20px 260px;
+    height: 830px;
+    width: 85%;
+    background-color: #ffffff;
+}
+
+#dbbs {
+    position: absolute;
+    color: #ffffff;
+    bottom: 80px;
+    font-size: 0.5em;
+    width: 70%;
+    text-align: center;
+    padding-left: 40px;
+}
+
+/* 按钮样式 */
+#content1 button {
+    background-color: #6e76de;
+    color: #ffffff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#content1 input[type="button"] {
+    background-color: #6e76de;
+    color: #ffffff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+#content1 button:hover,
+#content1 input[type="button"]:hover {
+    background-color: #8085ce;
+}
+
+#content1 input[type="submit"] {
+    background-color: #6e76de;
+    color: #ffffff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+    #content1 input[type="submit"]:hover {
+        background-color: #8085ce;
+    }
+
+/* 输入文本样式 */
+#content1 input[type="text"] {
+    background-color: #ffffff;
+    color: black;
+    padding: 5px 10px;
+    border: 1px solid rgb(75, 72, 72);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* 表格样式 */
+#content1 table {
+    width: 80%;
+    border-collapse: collapse;
+    /* 删除表格之间的边距 */
+    margin-top: 20px;
+    margin-left: 50px;
+
+}
+
+#content1 td {
+    border: 1px solid rgb(143, 141, 141);
+    ;
+    /* 设置单元格边框 */
+    padding: 8px;
+    /* 设置单元格内边距 */
+    text-align: center;
+    /* 设置单元格内文本对齐方式 */
+    font-size: 0.9em;
+}
+
+#content1 th {
+    border: 1px solid rgb(143, 141, 141);
+    ;
+    /* 设置单元格边框 */
+    padding: 8px;
+    /* 设置单元格内边距 */
+    text-align: center;
+    /* 设置单元格内文本对齐方式 */
+    background-color: #6e76de;
+    /* 设置表头背景色 */
+    color: #F0F0F0;
+}
